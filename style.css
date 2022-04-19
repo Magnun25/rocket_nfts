@@ -63,6 +63,10 @@ main {
     margin: auto;
 }
 
+#container-a {
+    padding-bottom: 75px;
+}
+
 section#apresentation {
     display: flex;
     max-height: 280px;
@@ -142,4 +146,42 @@ section#astronauts img{
 
     border: 1px solid rgba(255, 255, 255, 0.850);
 }
+
+#container-b {
+    display: grid;
+    grid-template-areas: 
+        "aside article1 article2"
+        "aside img img"
+    ;
+    /*  
+        a -> aside   
+        b -> article 1  
+        c -> article 2  
+        d -> img 
+    */
+}
+div#container-b section {
+    display: flex;
+    justify-content: center;
+}
+
+div#container-b aside {
+    grid-area: aside;
+    width: 300px;
+}
+#article1-container-b {
+    grid-area: article1;
+    max-width: 300px;
+}
+#article2-container-b {
+    grid-area: article2;
+    max-width: 300px;
+}
+div#container-b img {
+    grid-area: img;
+}
+
+
+
+
 
