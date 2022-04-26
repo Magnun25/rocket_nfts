@@ -22,8 +22,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
+
+#bg-container-a {
+    background: url(assets/background.png) no-repeat center / 2000px;
+}
 #container-a {
-    background-image: url(assets/background.png);
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 75px;
 }
 
 header {
@@ -56,15 +62,6 @@ button {
 
 span {
     color: var(--color-logo);
-}
-
-main {
-    max-width: 1000px;
-    margin: auto;
-}
-
-#container-a {
-    padding-bottom: 75px;
 }
 
 section#apresentation {
@@ -148,38 +145,100 @@ section#astronauts img{
 }
 
 #container-b {
-    display: grid;
-    grid-template-areas: 
-        "aside article1 article2"
-        "aside img img"
-    ;
-    /*  
-        a -> aside   
-        b -> article 1  
-        c -> article 2  
-        d -> img 
-    */
+   display: flex;
+   justify-content: flex-end;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.225)
 }
-div#container-b section {
+#container-b section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 1255px;
+    border-left: 1px solid rgba(255, 255, 255, 0.225);
 }
 
-div#container-b aside {
+#container-b section a {
+    text-decoration: none;
+    color: var(--color-logo);
+}
+
+#container-b aside {
     grid-area: aside;
-    width: 300px;
+    width: 200px;
+}
+#container-b aside:first-child{
+    padding-top: 100px;
+}
+.spotlight {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 30px;
 }
 #article1-container-b {
-    grid-area: article1;
     max-width: 300px;
+    padding: 50px;
 }
 #article2-container-b {
-    grid-area: article2;
     max-width: 300px;
+    padding: 50px;
 }
-div#container-b img {
-    grid-area: img;
+cite {
+    display: inline-block;
+    margin-top: 30px;
 }
+#container-b section div{
+    background-image: url(assets/banner2.png);
+    width: 1255px;
+    height: 280px;
+    background-size: 1700px;
+}
+
+#container-c {
+    height: 100px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#container-c h2{
+    padding: 150px 0px;
+    font-size: 37px;
+    font-weight: 700;
+}
+
+#container-c section {
+    display: flex;
+    flex-direction: column;
+}
+
+#container-c > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-c section:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.225) ;
+    padding-right: 200px;
+}
+.galery {
+    margin-bottom: 50px;
+}
+
+.galery h3 {
+    font-size: 30px;
+}
+
+.galery div:first-child{
+    margin-bottom: 60px;
+}
+.galery div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+
 
 
 
