@@ -64,6 +64,7 @@ button {
     justify-content: space-around;
     width: 180px;
     font-weight: 700;
+    color: #000;
 }
 
 span {
@@ -146,20 +147,21 @@ section#astronauts img{
     max-width: 240px;
     margin: 5px;
     margin-bottom: 20px;
-
     border: 1px solid rgba(255, 255, 255, 0.850);
 }
-
+/* container-b */
+.border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.225);
+}
 #container-b {
    display: flex;
-   justify-content: flex-end;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.225)
+   justify-content: space-between;
+   margin: auto;
+   max-width: 1000px;
+   gap: 20px;
 }
 #container-b section {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    max-width: 1255px;
     border-left: 1px solid rgba(255, 255, 255, 0.225);
 }
 
@@ -169,8 +171,7 @@ section#astronauts img{
 }
 
 #container-b aside {
-    grid-area: aside;
-    width: 200px;
+    max-width: 200px;
 }
 #container-b aside:first-child{
     padding-top: 100px;
@@ -192,13 +193,14 @@ cite {
     display: inline-block;
     margin-top: 30px;
 }
-#container-b section div{
-    background-image: url(assets/banner2.png);
-    width: 1255px;
-    height: 280px;
-    background-size: 1700px;
-}
 
+#banner {
+    width: 1070px;
+    height: 200px;
+    background-image: url("assets/banner.png");
+    background-size: 1350px;
+}
+/* container-c */
 #container-c {
     max-width: 1000px;
     margin: auto;
@@ -239,7 +241,7 @@ cite {
     justify-content: space-between;
     margin-bottom: 30px;
 }
-
+/* container-d */
 #container-d {
     max-width: 1000px;
     margin: auto;
@@ -294,12 +296,12 @@ cite {
     color: white;
 }
 
+/* Footer */
 footer {
     background-color: var(--card-color);
 }
 
-footer  div {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.225) ;
+.centralizer {
     margin: auto;
 }
 
@@ -312,7 +314,7 @@ footer section:first-child {
     margin: auto;
 }
 
-footer section:first-child div{
+#arrowBlock{
     background-color: var(--color-logo);
     width: 60px;
     height: 60px;
@@ -326,10 +328,95 @@ footer section:first-child img{
 
 footer div:nth-child(2) {
     display: flex;
-    flex: 1;
+    max-width: 1000px;
+    height: 250px;
 }
 
+#footer1 {
+    display: flex;
+    margin: 0px;
+    max-width: 300px;
+    height: 250px;
+    gap: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.225);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 30px;
+}
 
+#footer1 h3 {
+    font-size: 23px;
+}
+
+#footer1 > div {
+    margin: 0px;
+    height: 50px;
+} 
+
+input {
+    background-color: var(--body-background);
+    outline: none;
+    border: none;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+}
+footer button {
+    color: var(--black-text);
+    width: 80px;
+    height: 50px;
+    font-weight: 700;
+}
+
+#footer2 {
+    display: flex;
+    padding: 40px 100px;
+    gap: 40px;
+}
+
+#footer2 ul {
+    display: flex;
+    flex-direction: column;
+    max-width: 160px;
+}
+
+#footer2 li a {
+    color: rgba(255, 255, 255, 0.198);
+}
+
+#footer2 ul > li:first-child > a {
+    color: white;
+} 
+
+#footer2 li a:hover {
+    color: white;
+}
+
+#footer3 {
+    display: flex;
+    max-width: 1000px;
+    height: 200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer3 a {
+    color: rgba(255, 255, 255, 0.198);
+}
+
+#footer3 div {
+    display: flex;
+    height: 30px;
+    gap: 45px;
+}
+
+#footer3 div img{
+    width: 30px;
+    height: 30px;
+    border: none;
+}
 
 
 

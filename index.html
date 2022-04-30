@@ -67,18 +67,21 @@
                 <p class="commun-text">Artes</p>
             </div>
         </aside>
-        <section>
-            <article id="article1-container-b" class="commun-text">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ad debitis <a href="#">amet blanditiis</a>. Atque labore eum nisi et vero beatae expedita illum repellat rerum quidem? Tenetur ipsum recusandae eos illum?</p>
-                <cite>Lorem.ipsum</cite>
-            </article>
-            <article id="article2-container-b" class="commun-text">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ad debitis <a href="#">amet blanditiis</a>. Atque labore eum nisi et vero beatae expedita illum repellat rerum quidem? Tenetur ipsum recusandae eos illum?</p>
-                <cite>Lorem.ipsum</cite>
-            </article>
-            <div></div>
-        </section>
+        <div>
+            <section>
+                <article id="article1-container-b" class="commun-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ad debitis <a href="#">amet blanditiis</a>. Atque labore eum nisi et vero beatae expedita illum repellat rerum quidem? Tenetur ipsum recusandae eos illum?</p>
+                    <cite>Lorem.ipsum</cite>
+                </article>
+                <article id="article2-container-b" class="commun-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ad debitis <a href="#">amet blanditiis</a>. Atque labore eum nisi et vero beatae expedita illum repellat rerum quidem? Tenetur ipsum recusandae eos illum?</p>
+                    <cite>Lorem.ipsum</cite>
+                </article>
+            </section>
+            <div id="banner"></div>
+        </div>
     </div>
+    <div class="border"></div>
     <div id="container-c">
         <h2><span>Popular</span> da semana</h2>
         <div>
@@ -173,21 +176,23 @@
         <p>Veja todos os artistas<a href="#"><img src="assets/arrow-orange.svg" alt="Veja todos os artistas"></a></p>
     </div>
     <footer>
-        <div>
+        <div class="border centralizer">
             <section>
                 <h2>Rocket <span>NFTs</span></h2>
                 <a href="#">
-                    <div><img src="assets/arrow-black.svg" alt=""></div>
+                    <div id="arrowBlock"><img src="assets/arrow-black.svg" alt=""></div>
                 </a>
             </section>
         </div>
-        <div>
-            <section>
+        <div class="centralizer">
+            <section id="footer1">
                 <h3>Fique por dentro de <span>todas as novidades</span></h3>
-                <input type="text">
-                <button>Enviar</button>
+                <div>
+                    <input name="email" type="email" autocomplete="email" placeholder="nft@rocketseat.com.br">
+                    <button type="submit">Enviar</button>
+                </div>
             </section>
-            <section>
+            <section id="footer2">
                 <ul>
                     <li><a href="#">Empresa</a></li>
                     <li><a href="#">Sobre</a></li>
@@ -211,8 +216,15 @@
                 </ul>
             </section>
         </div>
-            <section>
+        <div class="border"></div>
+            <section id="footer3">
                 <a href="https://www.rocketseat.com.br">www.rocketseat.com.br</a>
+                <div>
+                    <img src="assets/instagram.svg" alt="Instagram">
+                    <img src="assets/youtube.svg" alt="Youtube">
+                    <img src="assets/twitter.svg" alt="Twitter">
+                    <img src="assets/email.svg" alt="Email">
+                </div>
             </section>
     </footer>
 </body>
