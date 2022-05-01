@@ -195,10 +195,11 @@ cite {
 }
 
 #banner {
-    width: 1070px;
+    border: 0.1px solid rgba(255, 255, 255, 0.114);
+    width: 157%;
     height: 200px;
     background-image: url("assets/banner.png");
-    background-size: 1350px;
+    background-size: 1650px;
 }
 /* container-c */
 #container-c {
@@ -418,9 +419,21 @@ footer button {
     border: none;
 }
 
+@media (max-width:1400px) {
+    #banner {
+        background-size: 1200px;
+        height: 150px;
+    }
+}    
 
+@media (max-width:1000px) {
 
+}
 
+@media (max-width: 600px) {
+
+    
+}
 
 
 
