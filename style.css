@@ -392,22 +392,7 @@ footer button {
     height: 30px;
     border: none;
 }
-
-@media (max-width:1680px) {
-    #banner {
-        width: 142%;
-        background-size: 1400px;
-        height: 175px;
-    }
-}   
-
-@media (max-width:1440px) {
-    #banner {
-        width: 127%;
-        background-size: 1300px;
-        height: 165px;
-    }
-} 
+ 
 @media (max-width:1024px) {
     
     #bg-container-a {
@@ -540,100 +525,66 @@ footer button {
         margin-bottom: 20px;
     }
     /* container-b */
-
-    /*  Continuar daqui */
     
     .border {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.225);
+        border: none;
     }
     #container-b {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 1000px;
-    gap: 20px;
+        max-width: 360px;
+        gap: 0px;
+        justify-content: center;
     }
     #container-b section {
-        display: flex;
-        border-left: 1px solid rgba(255, 255, 255, 0.225);
-    }
-
-    #container-b section a {
-        text-decoration: none;
-        color: var(--color-logo);
-    }
-
-    #container-b aside {
+        flex-direction: column;
         max-width: 200px;
+        border-left: 1px solid rgba(255, 255, 255, 0.225);
+        margin-bottom: 40px;
+    }
+    #container-b aside {
+        max-width: 100px;
     }
     #container-b aside:first-child{
-        padding-top: 100px;
+        padding: 100px 40px 0px 40px;
     }
     .spotlight {
-        font-size: 2.5em;
-        font-weight: 700;
-        margin-top: 30px;
+        font-size: 2em;
     }
     #article1-container-b {
-        max-width: 300px;
-        padding: 50px;
+        padding: 5px;
     }
     #article2-container-b {
-        max-width: 300px;
-        padding: 50px;
+        padding: 5px;
     }
-    cite {
-        display: inline-block;
-        margin-top: 30px;
-    }
-
     #banner {
-        border: 0.1px solid rgba(255, 255, 255, 0.114);
-        width: 157%;
-        height: 200px;
-        background-image: url("assets/banner.png");
-        background-size: 1650px;
+        width: 100%;
+        height: 165px;
+        position: absolute;
+        left: 0px;
+        background-position: 880px 0px;
+        background-size: 1300px;
     }
     /* container-c */
     #container-c {
-        max-width: 1000px;
+        max-width: 360px;
         margin: auto;
     }
-
     #container-c h2{
-        padding: 150px 0px;
-        font-weight: 700;
+        padding-top: 300px;
+        font-size: 30px;
+        text-align: center;
     }
-
     #container-c section {
-        display: flex;
         flex-direction: column;
     }
-
     #container-c > div {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
-
     #container-c section:first-child {
-        border-right: 1px solid rgba(255, 255, 255, 0.225) ;
-        padding-right: 200px;
+        border-right: none;
+        padding-right: 0px;
     }
-    .galery {
-        margin-bottom: 50px;
-    }
-
-    .galery h3 {
-        font-size: 30px;
-    }
-
-    .galery div:first-child{
-        margin-bottom: 60px;
-    }
-    .galery div {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
+    .imgGalery{
+        width: 360px;
     }
     /* container-d */
     #container-d {
