@@ -392,6 +392,14 @@ footer button {
     height: 30px;
     border: none;
 }
+
+@media (max-width: 1440px) {
+    #banner {
+        width: 127%;
+        height: 150px;
+        background-size: 1300px;
+    }
+}
  
 @media (max-width:1024px) {
     
@@ -480,7 +488,7 @@ footer button {
         height: 100px;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     h2 {
         font-size: 25px;
@@ -560,7 +568,7 @@ footer button {
         height: 165px;
         position: absolute;
         left: 0px;
-        background-position: 880px 0px;
+        background-position: 950px 0px;
         background-size: 1300px;
     }
     /* container-c */
